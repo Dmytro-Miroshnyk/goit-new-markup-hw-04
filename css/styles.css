@@ -521,10 +521,13 @@ footer .logo {
 }
 .portfolio-list-item {
 }
-.portfolio-list-item :hover .portfolio-cover {
+.portfolio-link {
+  display: block;
+}
+.portfolio-link :hover .portfolio-cover {
   transform: translateY(0);
 }
-.portfolio-list-item :hover .portfolio-list-wrap {
+.portfolio-link :hover .portfolio-list-wrap {
   border: 1px solid var(--light-color);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -546,8 +549,6 @@ footer .logo {
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-cover-text {
   color: var(--light-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
