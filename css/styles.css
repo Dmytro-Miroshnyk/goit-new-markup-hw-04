@@ -99,6 +99,9 @@ img {
   padding-bottom: 25.5px;
   border-bottom: 1px solid var(--accent-color);
   max-height: 72px;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .container-header {
   display: flex;
@@ -115,10 +118,8 @@ img {
   margin-right: auto;
 }
 .navigation-list-item {
-  position: relative;
 }
 .navigation-list-link {
-  color: var(--dark-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -127,11 +128,17 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.current {
+  position: relative;
+  color: var(--pressed-state-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .current::after {
   position: absolute;
   content: "";
   left: 0%;
-  bottom: 0%;
+  bottom: -1px;
   height: 4px;
   width: 100%;
   background-color: var(--pressed-state-color);
@@ -157,16 +164,16 @@ img {
 .hero {
   background-color: var(--hero-background-color);
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 }
 .hero-title {
   color: var(--white-background-color);
@@ -228,6 +235,10 @@ img {
   width: 264px;
   height: 112px;
   background-color: var(--light-color);
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 .advantages-svg {
   position: absolute;
@@ -240,7 +251,6 @@ img {
 }
 .advantages-list-title {
   letter-spacing: 0.02em;
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 .advantages-list-text {
@@ -278,6 +288,8 @@ img {
 .team-list-item {
   background-color: var(--white-background-color);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-list-image {
 }
