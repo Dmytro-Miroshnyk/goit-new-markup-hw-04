@@ -391,6 +391,10 @@ img {
 }
 .container-footer {
   display: flex;
+  align-items: baseline
+}
+.footer-logo-text {
+  margin-right: 120px
 }
 footer .logo {
   display: inline-block;
@@ -404,10 +408,10 @@ footer .logo {
   color: var(--light-color);
   font-size: 16px;
   line-height: 1.5;
-  margin-right: 120px;
 }
-.footer-social-title {
+.footer-social-text {
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-background-color);
@@ -417,13 +421,20 @@ footer .logo {
   display: flex;
   gap: 16px;
 }
-.footer-socials-bg {
-  position: relative;
+.footer-social-item {
   width: 40px;
   height: 40px;
+}
+.footer-socials-bg {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
   background-color: var(--primary-brand-color);
   border-radius: 50%;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -607,6 +618,7 @@ footer .logo {
 .modal-button-close:hover,
 .modal-button-close:focus {
   background-color: var(--pressed-state-color);
+  border: none;
 }
 .modal-button-close:hover .svg-close,
 .modal-button-close:focus .svg-close {
