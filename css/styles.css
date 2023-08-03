@@ -222,6 +222,7 @@ img {
   gap: 24px;
 }
 .advantages-svg-background {
+  display: flex;
   position: relative;
   gap: 24px;
   width: 264px;
@@ -360,8 +361,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 104px;
-  height: 56px;
   fill: var(--subtle-text-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -425,8 +424,6 @@ footer .logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 24px;
-  height: 24px;
   fill: var(--light-color);
 }
 .portfolio {
