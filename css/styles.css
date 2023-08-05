@@ -473,7 +473,7 @@ footer .logo {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button {
+.portfolio-filter-button {
   display: flex;
   padding: 12px 24px;
   justify-content: center;
@@ -492,8 +492,8 @@ footer .logo {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover,
-.button:focus {
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
   color: var(--white-background-color);
   background-color: var(--pressed-state-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
